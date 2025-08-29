@@ -1,0 +1,17 @@
+using UnityEngine;
+
+public class Bullet : MonoBehaviour
+{
+    public Vector3 direction;
+    public float speed = 5f;
+
+    void Update()
+    {
+        transform.position += direction * speed * Time.deltaTime;
+
+        if (Mathf.Abs(transform.position.x) > 20 || Mathf.Abs(transform.position.y) > 20)
+        {
+            BulletManager.Instance.RemoveBullet(gameObject);
+        }
+    }
+}
