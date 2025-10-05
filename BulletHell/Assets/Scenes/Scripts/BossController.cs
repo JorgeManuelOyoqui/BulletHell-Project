@@ -6,20 +6,39 @@ public class BossController : MonoBehaviour
     public GameObject bulletPrefab;
     private Coroutine currentMovement;
 
+    public int maxHealth = 300;
+    public int CurrentHealth { get; private set; }
+
+    private Animator animator;
+    private int faseActual = 0; // 1, 2 o 3
+
     void Start()
     {
+        CurrentHealth = maxHealth;
+        animator = GetComponent<Animator>();
         StartCoroutine(AttackPatternCycle());
+        GameManager.Instance.UpdateBossHealth(CurrentHealth, maxHealth);
+        GameManager.Instance.musicManager.PlayBattleMusic();
     }
 
     // Para que el jefe haga sus patrones de ataque
     IEnumerator AttackPatternCycle()
     {
-    while (true) // ← Esto hace que se repita infinitamente
-    {
-        yield return StartCoroutine(Pattern1());
-        yield return StartCoroutine(Pattern2());
-        yield return StartCoroutine(Pattern3());
-    }
+        while (true) // ← Esto hace que se repita infinitamente
+        {
+            animator.SetBool("Fase 1", true);
+            animator.SetBool("Fase 2", false);
+            animator.SetBool("Fase 3", false);
+            yield return StartCoroutine(Pattern1());
+            animator.SetBool("Fase 1", false);
+            animator.SetBool("Fase 2", true);
+            animator.SetBool("Fase 3", false);
+            yield return StartCoroutine(Pattern2());
+            animator.SetBool("Fase 1", false);
+            animator.SetBool("Fase 2", false);
+            animator.SetBool("Fase 3", true);
+            yield return StartCoroutine(Pattern3());
+        }
     }
 
     // Patrón de ataque 1
@@ -35,6 +54,7 @@ public class BossController : MonoBehaviour
                 float angle = i * (360f / bulletCount);
                 Vector3 dir = Quaternion.Euler(0, 0, angle) * Vector3.up;
                 SpawnBullet(dir, Color.red);
+                GameManager.Instance.sfxManager.PlayBossPhaseSound(0);
             }
             yield return new WaitForSeconds(0.5f);
             timer += 0.5f;
@@ -52,6 +72,7 @@ public class BossController : MonoBehaviour
         {
             Vector3 dir = Quaternion.Euler(0, 0, angle) * Vector3.up;
             SpawnBullet(dir, Color.green);
+            GameManager.Instance.sfxManager.PlayBossPhaseSound(1);
             angle += 15f;
             yield return new WaitForSeconds(0.05f);
             timer += 0.1f;
@@ -72,6 +93,7 @@ public class BossController : MonoBehaviour
                 Vector3 spawnPos = transform.position + offset;
                 Vector3 dir = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized;
                 SpawnBullet(dir, new Color(1f, 0.85f, 3f), spawnPos);
+                GameManager.Instance.sfxManager.PlayBossPhaseSound(2);
             }
             yield return new WaitForSeconds(0.2f);
             timer += 0.2f;
@@ -156,5 +178,24 @@ public class BossController : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        CurrentHealth -= damage;
+        GameManager.Instance.UpdateBossHealth(CurrentHealth, maxHealth);
+
+        if (CurrentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        StopAllCoroutines();
+        Debug.Log("¡Victoria! El jefe ha sido derrotado.");
+        GameManager.Instance.ShowVictory();
+        Destroy(gameObject);
     }
 }

@@ -9,6 +9,7 @@ public class PlayerShooter : MonoBehaviour
     private Camera mainCamera;
     private PlayerControls controls;
     private bool isShooting;
+    private Animator animator;
 
     void Awake()
     {
@@ -24,6 +25,7 @@ public class PlayerShooter : MonoBehaviour
     void Start()
     {
         mainCamera = Camera.main;
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -37,6 +39,7 @@ public class PlayerShooter : MonoBehaviour
 
     void Shoot()
     {
+        animator.Play("Player Shoot");
         Vector3 mousePos = mainCamera.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         Vector3 direction = (mousePos - transform.position).normalized;
         direction.z = 0;
@@ -44,5 +47,6 @@ public class PlayerShooter : MonoBehaviour
         GameObject bullet = Instantiate(playerBulletPrefab, transform.position, Quaternion.identity);
         bullet.GetComponent<PlayerBullet>().direction = direction;
         BulletManager.Instance.AddBullet(bullet);
+        GameManager.Instance.sfxManager.PlayPlayerShoot();
     }
 }

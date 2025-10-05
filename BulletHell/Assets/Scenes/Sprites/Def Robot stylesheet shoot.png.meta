@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: a584d5c3453de3046b6dac9c81099227
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1700802302304158854
+    second: Def Robot stylesheet shoot_0
+  - first:
+      213: 2098745878026233445
+    second: Def Robot stylesheet shoot_1
+  - first:
+      213: 3834196435510326044
+    second: Def Robot stylesheet shoot_2
+  - first:
+      213: -8110047645471559211
+    second: Def Robot stylesheet shoot_3
+  - first:
+      213: -7568930683352959707
+    second: Def Robot stylesheet shoot_4
+  - first:
+      213: -1878243926622555791
+    second: Def Robot stylesheet shoot_5
+  - first:
+      213: 1863764959486955511
+    second: Def Robot stylesheet shoot_6
+  - first:
+      213: -875755763947867618
+    second: Def Robot stylesheet shoot_7
+  - first:
+      213: 7055000557685908954
+    second: Def Robot stylesheet shoot_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1074
+        width: 239
+        height: 367
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7b7ef931598568e0800000000000000
+      internalID: -1700802302304158854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_1
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 1074
+        width: 204
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566a195a14e302d10800000000000000
+      internalID: 2098745878026233445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_2
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1074
+        width: 285
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1379a9f75dc53530800000000000000
+      internalID: 3834196435510326044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_3
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 595
+        width: 241
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1bc24a2a2537f80800000000000000
+      internalID: -8110047645471559211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_4
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 595
+        width: 206
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525313935a1c5f690800000000000000
+      internalID: -7568930683352959707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_5
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 595
+        width: 290
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171b020a9132fe5e0800000000000000
+      internalID: -1878243926622555791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 145
+        width: 252
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ff4a032b5c6dd910800000000000000
+      internalID: 1863764959486955511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_7
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 144
+        width: 230
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12f2ebc5c0b8d3f0800000000000000
+      internalID: -875755763947867618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Def Robot stylesheet shoot_8
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 144
+        width: 266
+        height: 340
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad52d03d0a568e160800000000000000
+      internalID: 7055000557685908954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Def Robot stylesheet shoot_0: -1700802302304158854
+      Def Robot stylesheet shoot_1: 2098745878026233445
+      Def Robot stylesheet shoot_2: 3834196435510326044
+      Def Robot stylesheet shoot_3: -8110047645471559211
+      Def Robot stylesheet shoot_4: -7568930683352959707
+      Def Robot stylesheet shoot_5: -1878243926622555791
+      Def Robot stylesheet shoot_6: 1863764959486955511
+      Def Robot stylesheet shoot_7: -875755763947867618
+      Def Robot stylesheet shoot_8: 7055000557685908954
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

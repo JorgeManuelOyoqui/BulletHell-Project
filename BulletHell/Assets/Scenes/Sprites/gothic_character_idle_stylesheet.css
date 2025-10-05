@@ -1,0 +1,19 @@
+
+/* Estilo para el personaje gótico en estado Idle */
+.gothic-character {
+    width: 200px;
+    height: auto;
+    background-image: url('Payer Model.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: idleFloat 2s ease-in-out infinite;
+    position: relative;
+}
+
+/* Animación de movimiento vertical suave */
+@keyframes idleFloat {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}

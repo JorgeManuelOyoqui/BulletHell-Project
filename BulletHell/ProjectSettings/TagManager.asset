@@ -6,6 +6,8 @@ TagManager:
   tags:
   - BossBullet
   - PlayerBullet
+  - Boss
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -40,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: UIOverlay
+    uniqueID: 3055167593
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
